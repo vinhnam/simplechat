@@ -1,0 +1,17 @@
+<div class="chat-messages">
+   <div class="chat-messages-create-container"> 
+     <input placeholder="Please confirm your reference number" id="confirmButton" class="chat-messages-create-input" type="text" [(ngModel)]="reference">
+     <button  class="chat-messages-create-button" (click)="ConfirmRef()"> Confirm </button>
+   </div>
+
+   <div class="chat-messages-show-container">
+   	 
+     <ul class="chat-messages-show-list" id="message-list">
+     </ul>
+   </div>
+
+   <div class="chat-messages-create-container"> 
+     <input class="chat-messages-create-input" type="text" [(ngModel)]="message">
+     <button  class="chat-messages-create-button" (click)="SendMessage()"> Send </button>
+   </div>
+</div>

@@ -3,7 +3,7 @@ import io from 'socket.io-client';
 import { ContentService } from '../content.service';
 
 
-const SOCKET_ENDPOINT = 'localhost:3000';
+const SOCKET_ENDPOINT = 'finlexchat-backend.herokuapp.com';
 
 @Component({
   selector: 'app-chat-inbox',
@@ -17,7 +17,7 @@ export class ChatInboxComponent implements OnInit {
   private socket: any;
 
   constructor(private contentService: ContentService) { 
-    this.socket = io('http://localhost:3000', { transports : ['websocket'] });
+    this.socket = io('http://finlexchat-backend.herokuapp.com/', { transports : ['websocket'] });
   }
 
   ngOnInit() { 

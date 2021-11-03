@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ContentService {
 
-  private REST_API_SERVER = "http://localhost:3000/";
+  private REST_API_SERVER = "http://finlexchat-backend.herokuapp.com/";
 
   constructor(private httpClient: HttpClient) { }
 

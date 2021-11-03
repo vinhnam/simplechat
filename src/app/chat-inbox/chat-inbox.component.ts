@@ -3,7 +3,7 @@ import io from 'socket.io-client';
 import { ContentService } from '../content.service';
 
 
-const SOCKET_ENDPOINT = 'localhost:3000';
+const SOCKET_ENDPOINT = 'finlexchat-backend.herokuapp.com';
 
 @Component({
   selector: 'app-chat-inbox',

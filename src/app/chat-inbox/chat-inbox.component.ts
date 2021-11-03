@@ -17,7 +17,7 @@ export class ChatInboxComponent implements OnInit {
   private socket: any;
 
   constructor(private contentService: ContentService) { 
-    this.socket = io('http://finlexchat-backend.herokuapp.com', { transports : ['websocket'] });
+    this.socket = io('https://finlexchat-backend.herokuapp.com', { transports : ['websocket'] });
   }
 
   ngOnInit() { 
